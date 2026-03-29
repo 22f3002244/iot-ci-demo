@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh '''
                     python3 --version
-                    pip3 install -r requirements.txt --quiet
+                    pip3 install -r requirements.txt --quiet --break-system-packages
                     echo "Dependencies installed."
                 '''
             }
